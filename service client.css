@@ -1,0 +1,261 @@
+.contenu {
+    background-color: white;
+    width: 99%;
+    border-radius: 10px;
+    margin-left: 1rem;
+    height: 90vh;
+}
+
+.card {
+    margin-left: 3rem;
+}
+
+.input-title {
+    color:  #8f8a8a;
+    padding: 50px;
+}
+
+#input-sujet {
+    background-color: #cccccc84;
+    border-radius: 15px;
+    width: 80%;
+    height: 60px;
+    outline: none;
+    border: none;
+    margin-left: 2rem;
+}
+
+#input-sujet:focus {
+    border: 3px solid #79B51C;
+}
+
+#input-message {
+    background-color: #cccccc84;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 30rem;
+    margin-left: 2rem;
+}
+
+#input-message:focus {
+    border: 3px solid #79B51C;
+}
+
+.input-button {
+    background-color:  #1898A8;
+    margin-top: 3rem;
+    width: 80%;
+    height: 50px;
+    margin-left: 2rem;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+.input-button:active {
+    background-color: white;
+    color: #1898A8;
+    border: 2px solid #1898A8;
+    cursor: pointer;
+}
+
+
+
+@media screen and (width:1440px){
+    .contenu{
+        margin-left: 4rem;
+        width: 96%;
+        height: 87vh;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+    .input-title {
+        padding: 10px;
+    }
+    #input-message {
+        height: 500px;
+    }
+}
+
+@media screen and (width:1024px){
+    .contenu{
+        margin-left: 4rem;
+        width: 96%;
+        height: 87vh;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+    .input-title {
+        padding: 10px;
+    }
+    #input-message {
+        height: 500px;
+    }
+}
+
+@media screen and (width:768px){
+    body {
+        margin: 0;
+    }
+    .container {
+        max-width: 768px;
+        margin: auto;
+        padding: 0;
+    }
+    span, .logo img {
+        display: none;
+    }
+    .active {
+        width: 40px !important;
+    }
+    .contenu {
+        margin-left: -3rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .input-title {
+        padding: 10px;
+    }
+    #input-message {
+        height: 500px;
+    }
+
+}
+
+
+@media screen and (max-width:425px) {
+    .container {
+        max-width: 425px !important;
+        margin: auto !important;
+        padding: 0 !important;
+    }
+    span, .logo img {
+        display: none !important;
+    }
+   .active {
+       width: 30px !important;
+       padding-left: 0 !important;
+   }
+
+   .sidebar {
+       width: 12% !important;
+       margin: 0 !important;
+       padding: 0 !important;
+       left: -12% !important;
+       position: fixed !important;
+       transition: all .5s !important;
+   }
+
+   ul   {
+       padding: 5px !important;
+       margin-top: 5rem !important;
+   }
+
+   .list2 {
+       margin-top: 18rem !important;
+   }
+
+   label #btn {
+       display: inline !important; 
+       left: 20px !important;
+       top: 10px;
+   }
+
+   .label2 {
+    display: none !important;
+}
+
+   .navbar {
+       width: 105% !important;
+       margin-left: -90px !important;
+       position: fixed !important;
+       top: 0 !important;
+   }
+
+   .card-table {
+    height: 270vh;
+       width: 370px;
+       margin-left: -4rem;
+       margin-top: 8rem;
+   }
+
+   .page-title {
+       margin-top: 7rem;
+   }
+
+   
+}
+
+
+@media screen and (max-width:375px) {
+    .container {
+        max-width: 375px !important;
+        margin: auto !important;
+        padding: 0 !important;
+    }
+    span, .logo img {
+        display: none !important;
+    }
+   .active {
+       width: 30px !important;
+       padding-left: 0 !important;
+   }
+
+   .sidebar {
+       width: 12% !important;
+       margin: 0 !important;
+       padding: 0 !important;
+       left: -12% !important;
+       position: fixed !important;
+       transition: all .5s !important;
+   }
+
+   ul   {
+       padding: 5px !important;
+       margin-top: 5rem !important;
+   }
+
+   .list2 {
+       margin-top: 18rem !important;
+   }
+
+   label #btn {
+       display: inline !important; 
+       left: 20px !important;
+       top: 10px;
+   }
+
+   .label2 {
+    display: none !important;
+}
+
+   .navbar {
+       width: 105% !important;
+       margin-left: -90px !important;
+       position: fixed !important;
+       top: 0 !important;
+   }
+
+   .card-table {
+    height: 270vh;
+       width: 370px;
+       margin-left: -4rem;
+       margin-top: 8rem;
+   }
+
+   .page-title {
+       margin-top: 7rem;
+   }
+
+   
+}

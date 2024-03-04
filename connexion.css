@@ -1,0 +1,153 @@
+body {
+    height: 80vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+.alerte{
+position: relative;
+z-index: 2;
+left: 700px;
+text-align: center;
+font-size: 25px;
+bottom: 350px;
+border-radius: 10px;
+border: 1px solid #1898A8;
+color: #79B51C;
+display: none;
+}
+.alerte h1 {
+    background-color: #1898A8;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+}
+
+.logo img {
+    width: 400px;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.titre1 {
+    color:  #1898A8;
+}
+
+.titre2 {
+    color:  #79B51C;
+    margin-left: 10px;
+}
+
+.Input {
+    width: 500px;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid  #8f8a8a;
+    font-size: 20px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.Input:focus {
+    border: 3px solid #79B51C;
+}
+
+.input2 {
+    margin-top: 50px;
+    flex-direction: column;
+    display: flex;
+}
+
+.lien {
+    color:  #8f8a8a;
+    margin-top: 10px;
+}
+
+.btn button {
+    background-color:  #1898A8;
+    width: 500px;
+    height: 45px;
+    border-radius: 7px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 30px;
+}
+
+.btn button:active {
+    background-color: white;
+    color: #3697ab;
+    border: 2px solid #3697ab;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:375px) {
+    .container {
+        max-width: 375px;
+        margin: auto;
+        font-size: 12px;
+    }
+    .logo img {
+        width: 300px;
+    }
+    .input {
+        justify-content: center;
+        display: flex;
+    }
+
+    .input #input {
+       width: 250px;
+       margin: auto;
+    }
+
+    .input2 {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input2 #input {
+        width: 250px;
+        margin: auto;
+    }
+
+    .input2 a {
+        margin-left: 4rem;
+    }
+    .btn {
+        width: 375px;
+        justify-content: center;
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .btn button {
+        width: 250px;
+        margin: auto;
+    }
+
+}

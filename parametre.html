@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
+    <link rel="stylesheet" href="parametre.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="changement">
+        <h1>Modifier le mot de passe</h1>
+        <div class="changePasse">
+            <h2>Ancien mot de passe</h2>
+            <input class="ancienPasse" type="text">
+            <h2>Nouveau mot de passe</h2>
+            <input class="nouveauPasse" type="text">
+            <h2>Confirmation</h2>
+            <input class="confirmation" type="text"><br>
+            <button class="accepter">Envoyer</button>
+        </div>
+    </div>
+    <div class="alerte">
+        <h1>connexion</h1>
+       <p>la combinaisonIdentifiant/Password est incorrecte</p>
+    </div>
+   <div class="container">
+    <input type="checkbox"  id="check1">
+    <label class="label2" for="check1">
+        <i class="fas fa-bars" id="btn"></i>
+    </label>
+       <div class="sidebar">
+            <div class="sidebar_element">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+              <div class="list">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="facture.html">
+                            <i class="fa-solid fa-peace"></i>
+                            <span>Facture</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="commande.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Commande</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="suivi.html">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Suivi</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="service client.html">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Service client</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list2">
+                    <li class="active">
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Parametre du compte</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span>Deconnexion</span>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+       </div>
+       <div class="section">
+           <nav class="navbar">
+                <div class="nav">
+                    <input type="checkbox"  id="check">
+                    <label class="label2" for="check">
+                        <i class="fas fa-bars" id="btn"></i>
+                    </label>
+                    <img class="icon-cloche" src="icons8-cloche-50.png" alt="Icon-cloche">
+                    <img class="icon-avatar"  src="images/avatar.jpg" alt="avatar">
+                </div>
+           </nav>
+           <div class="contenu">
+            <h1 style="color: #8f8a8a; font-size: 50px;">Parametre du compte</h1>
+                <div class="entete">
+                   
+                    <p class="Retour" style="color: greenyellow; font-size: 30px; margin-left: 50px;"><i class="fa-solid fa-arrow-turn-down-left"></i>Retour au tableau de bord</p>
+                    <div class="divbtn">
+                        <button class="btnmodifier" style="background-color: #1898A8;">Modifier le mot de passe</button>
+                        <button class="btnsupprimer" style="background-color: red; margin-left: 80px;">Supprimer le compte</button>
+                    </div>
+                </div>
+                <div class="Modifier">
+                    <h2 class="">Modifier le profil</h2>
+                    <h2>ton Avatar</h2>
+                </div>
+               <div class="centre">
+                <div style="width: 65%; height: 100%; margin-left: 20px;">
+                    <div class="cardS">
+                
+                        <h2 class="input-title">Nom</h2>
+                       <input type="text" placeholder="essai Test" name="" id="input-sujet">
+                    </div>
+                    <div class="cardS">
+                        <h2 class="input-title">Email</h2>
+                       <input type="email" placeholder="essaiTest@gmail.com" name="" id="input-message">
+                       <h2 class="input-title">Biographie</h2>
+                       <textarea id="myTextArea"></textarea>
+                    </div>
+                    <button class="input-button">Envoyer</button>
+                    
+
+                   
+                </div>
+                <div class="profil" style="width: 30%;">
+                    <img class="Avatar" src="images/avatar.jpg" alt="">
+                    <input type="file" hidden="hidden" class="inputFile">
+                    <button class="profilbtn btnmodifier" id="btnModifierPhoto" style="background-color: #1898A8;">Modifier la photo</button><br>
+                    <button class="profilbtn btnsupprimer" id="btnSupprimerPhoto" style="background-color: red;">Supprimer la photo</button>
+                </div>
+               </div>
+               
+           </div>
+       </div>
+   </div>
+   <script>
+    tinymce.init({
+        selector: '#myTextArea',
+        plugins: 'lists link image',
+        toolbar: 'undo redo | bold italic | bullist numlist | link',
+    });
+</script>
+   <script src="parametre.js"></script>
+</body>
+</html>

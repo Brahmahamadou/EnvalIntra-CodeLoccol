@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="menu.css">
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="facture-command.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Facture</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <input type="checkbox"  id="check">
+        <label class="label2" for="check">
+            <i class="fas fa-bars" id="btn"></i>
+        </label> -->
+        <div class="sidebar">
+            <div class="sidebar_element">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="facture.html">
+                                <i class="fa-solid fa-peace"></i>
+                                <span>Facture</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="commande.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Commande</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="suivi.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>Suivi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="service client.html">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <span>Service client</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list2">
+                        <li>
+                            <a href="parametre.html">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Parametre du compte</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <span>Deconnexion</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <nav class="navbar">
+                <div class="nav">
+                    <input type="checkbox"  id="check">
+                    <label for="check">
+                        <i class="fas fa-bars" id="btn"></i>
+                    </label>
+                    <img class="icon-cloche" src="icons8-cloche-50.png" alt="Icon-cloche">
+                    <img class="icon-avatar" src="images/avatar.jpg" alt="avatar">
+                </div>
+            </nav>
+            <div class="card">
+                 <hr>
+                <div class="search-input" >
+                   
+                    <h1 style="font-size: 50px; margin: 0; color: #8f8a8a;;">facture</h1>
+                    <input type="text" class="barre" id="check1">
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="delete-bd-left fact">Facture <span class="AZ"><i class="fa-solid fa-arrow-down-a-z"></i></span></th>
+                                <th class="labo">Laboratoire<span><i class="fa-solid fa-arrow-down-a-z"></i></span></th>
+                                <th class="Date">Date<span><i class="fa-solid fa-arrow-down-a-z"></i></span></th>
+                                <th class="rapport">Cliquez pour voir le rapport</th>
+                            </tr> 
+                        </thead>
+                        <tbody id="tbody">
+                          
+                        </tbody>
+                       
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="facture.js"></script>
+</body>
+
+</html>

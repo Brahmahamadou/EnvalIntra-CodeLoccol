@@ -1,0 +1,297 @@
+
+.card {
+    width: 90%;
+    height: 70vh;
+    background-color: white;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+
+}
+
+table {
+    width: 98%;
+    
+    text-align: center;
+    border-collapse: collapse;
+
+    color: #8f8a8a;
+    font-family: sans-serif;
+}
+
+.table {
+    overflow-x: auto;
+}
+
+.card-tbody {
+    overflow-x: auto;
+}
+
+
+thead tr {
+    height: 70px;
+    font-size: 25px;background-color: #4A96A6;
+    color: white;
+}
+
+tbody tr {
+    font-size: 25px;
+}
+
+tbody tr th {
+    background-color:#4A96A6 ;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+}
+.td-color {
+    color: red;
+}
+
+.td-color1 {
+    color: greenyellow;
+}
+
+
+td,th{
+    border-collapse: collapse;
+    border-left: 1px solid #8f8a8a;
+    border-bottom: 1px solid #8f8a8a;
+}
+input {
+    width: 23rem;
+    height: 3rem;
+    padding-left: 13px;
+    border: none;
+    background-color: #cccccc84;
+    background-image: url('icons8-sistrix.svg');
+    border-radius: 5px;
+    background-size: 2rem;
+    background-position: 1rem;
+    background-repeat: no-repeat;
+    outline: none;
+    padding-left: 55px;
+}
+
+input:focus{
+    border: 3px solid #79B51C;
+    background-image: url('icons8-sistrix (1).svg');
+  }
+
+  .search-input{
+      /* padding-bottom: 10px;
+     margin-top: -5rem;
+    display: flex;
+    justify-content:end; */
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+button {
+    color: white;
+    background-color: #4A96A6;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 20px;
+    border: none;
+    border-radius: 0.2rem;
+}
+button:hover {
+    color: #4A96A6;
+    background-color: white;
+    border: 1px solid #4A96A6;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+
+.delete-bd-left {
+    border-left: none;
+}
+tbody tr:hover {
+  background-color: #cccccc84;
+} 
+
+thead {
+    height: 1em;
+}
+.one {
+    font-size: 2rem;
+    text-align: left;
+}
+
+/* Pour Facture */
+.labo {
+    width: 40%;
+}
+.fact {
+    width: 20%;
+}
+.Date{
+    width: 20%;
+}
+.rapport{
+    width: 20%;
+}
+
+
+/* Pour Commande */
+.labo1 {
+    width: 30rem;
+}
+.Date1 ,.Status{
+    width: 10em;
+}
+.rapport1 {
+    width: 20em;
+}
+
+
+
+@media screen and (max-width:375px) {
+    .container {
+        max-width: 375px;
+        margin: auto;
+        padding: 0;
+    }
+    span, .logo img {
+        display: none;
+    }
+   .active {
+       width: 30px;
+       padding-left: 0;
+   }
+
+   .sidebar {
+       width: 12%;
+       margin: 0;
+       padding: 0;
+       left: -12%;
+       position: fixed;
+       transition: all .5s;
+   }
+
+   ul   {
+       padding: 5px;
+       margin-top: 5rem;
+   }
+
+   .list2 {
+       margin-top: 18rem;
+   }
+
+   label #btn {
+       display: inline;
+       left: 20px;
+       top: 10px;
+   }
+
+   .label2 {
+    display: none;
+}
+
+   .navbar {
+       width: 105%;
+       margin-left: -90px;
+       position: fixed;
+       top: 0;
+   }
+
+   .card {
+    height: 90vh;
+       width: 360px;
+       margin-left: -4rem;
+       margin-top: 8rem;
+   }
+
+   thead tr h3 {
+       text-align: center;
+   }
+
+   tbody tr {
+       font-size: 12px;
+   }
+
+
+   #table-id {
+       margin: 0;
+       margin-top: 9px;
+   }
+
+   .search-input {
+      margin: auto;
+       width: 300px;
+       margin-top: 10px;
+   }
+
+   table {
+       width: 200%;
+   }
+
+
+
+.rapport{
+    width: 150%;
+}
+
+button {
+    height: 25px !important;
+    font-size: 12px;
+    width: 5rem;
+}
+
+
+.commande {
+    width: 10rem;
+    height: 40px;
+}
+
+}
+
+
+
+@media screen and (width:1440px){
+    .card {
+        width: 94%;
+        margin-left: 4.3rem;
+        margin-top: 2rem;
+    }
+    tbody tr {
+        font-size: 16px;
+    }
+    input {
+        width: 13rem;
+        height: 40px;
+    }
+    
+    
+    }
+    
+
+    @media screen and (width:1024px){
+        .card {
+            width: 94%;
+            margin-left: 4.3rem;
+            margin-top: 2rem;
+        }
+        tbody tr {
+            font-size: 16px;
+        }
+        input {
+            width: 13rem;
+            height: 40px;
+        }
+        
+        
+        }
+
+    @media screen and (width:768px) {
+        .list2 ul {
+            margin-top: 21rem !important;
+        }
+        
+    }
